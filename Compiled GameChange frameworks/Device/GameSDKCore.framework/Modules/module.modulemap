@@ -1,0 +1,11 @@
+framework module GameSDKCore {
+  umbrella header "GameSDKCore.h"
+
+  export *
+  module * { export * }
+}
+
+module GameSDKCore.Swift {
+    header "GameSDKCore-Swift.h"
+    requires objc
+}

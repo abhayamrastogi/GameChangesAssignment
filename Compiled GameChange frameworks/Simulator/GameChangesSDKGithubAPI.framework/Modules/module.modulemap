@@ -1,0 +1,11 @@
+framework module GameChangesSDKGithubAPI {
+  umbrella header "GameChangesSDKGithubAPI.h"
+
+  export *
+  module * { export * }
+}
+
+module GameChangesSDKGithubAPI.Swift {
+    header "GameChangesSDKGithubAPI-Swift.h"
+    requires objc
+}
