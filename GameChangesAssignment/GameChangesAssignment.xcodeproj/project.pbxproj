@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE0A06262302097B00126107 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06252302097B00126107 /* AppCoordinator.swift */; };
+		BE0A06282302099000126107 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06272302099000126107 /* Coordinator.swift */; };
+		BE0A062A230209D200126107 /* GithubIssuesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A0629230209D200126107 /* GithubIssuesCoordinator.swift */; };
+		BE0A062D23020A6100126107 /* GithubIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A062B23020A6100126107 /* GithubIssuesViewController.swift */; };
+		BE0A062E23020A6100126107 /* GithubIssuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0A062C23020A6100126107 /* GithubIssuesViewController.xib */; };
+		BE0A063023020A8A00126107 /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A062F23020A8A00126107 /* ViewProtocols.swift */; };
+		BE0A063223020AD900126107 /* GithubIssuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A063123020AD900126107 /* GithubIssuesViewModel.swift */; };
+		BE0A06342302105E00126107 /* GithubIssuesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06332302105E00126107 /* GithubIssuesProtocols.swift */; };
+		BE0A06362302122100126107 /* GithubIssuesViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06352302122100126107 /* GithubIssuesViewController+TableView.swift */; };
+		BE0A06392302132400126107 /* GithubIssueItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06382302132400126107 /* GithubIssueItemViewModel.swift */; };
+		BE0A06442302A75400126107 /* GithubIssuesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06422302A75400126107 /* GithubIssuesTableViewCell.swift */; };
+		BE0A06452302A75400126107 /* GithubIssuesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0A06432302A75400126107 /* GithubIssuesTableViewCell.xib */; };
+		BE0A06472302A77000126107 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06462302A77000126107 /* UITableViewExtensions.swift */; };
+		BE0A06492302A88500126107 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06482302A88400126107 /* NSObjectExtensions.swift */; };
+		BE0A064E2302AC2500126107 /* GameSDKCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0A064C2302AC2500126107 /* GameSDKCore.framework */; };
+		BE0A06562302AECE00126107 /* GithubIssuesCommentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06552302AECE00126107 /* GithubIssuesCommentCoordinator.swift */; };
+		BE0A06592302AEE700126107 /* GithubIssuesCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06572302AEE700126107 /* GithubIssuesCommentViewController.swift */; };
+		BE0A065A2302AEE700126107 /* GithubIssuesCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0A06582302AEE700126107 /* GithubIssuesCommentViewController.xib */; };
+		BE0A065C2302AF6C00126107 /* GithubIssuesCommentViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A065B2302AF6C00126107 /* GithubIssuesCommentViewController+TableView.swift */; };
+		BE0A065E2302AF9900126107 /* GithubIssuesCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A065D2302AF9900126107 /* GithubIssuesCommentViewModel.swift */; };
+		BE0A06612302B01400126107 /* GithubIssueCommentItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06602302B01400126107 /* GithubIssueCommentItemViewModel.swift */; };
+		BE0A06632302B04600126107 /* GithubIssuesCommentProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A06622302B04600126107 /* GithubIssuesCommentProtocols.swift */; };
+		BE0A066723030D1200126107 /* GithubIssueCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A066523030D1200126107 /* GithubIssueCommentTableViewCell.swift */; };
+		BE0A066823030D1200126107 /* GithubIssueCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0A066623030D1200126107 /* GithubIssueCommentTableViewCell.xib */; };
+		BE0A066B23030F8D00126107 /* GameChangesSDKGithubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0A064B2302AC2500126107 /* GameChangesSDKGithubAPI.framework */; };
+		BE0A066C23030F8D00126107 /* GameChangesSDKGithubAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE0A064B2302AC2500126107 /* GameChangesSDKGithubAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE0A066E23030F8D00126107 /* GameSDKCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE0A064C2302AC2500126107 /* GameSDKCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE613BD023016D1D009E9386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE613BCF23016D1D009E9386 /* AppDelegate.swift */; };
+		BE613BD223016D1D009E9386 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE613BD123016D1D009E9386 /* ViewController.swift */; };
+		BE613BD723016D1E009E9386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE613BD623016D1E009E9386 /* Assets.xcassets */; };
+		BE613BDA23016D1E009E9386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE613BD823016D1E009E9386 /* LaunchScreen.storyboard */; };
+		BEB0AAFF230458EC001BEE80 /* PersistenceStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB0AAFE230458EC001BEE80 /* PersistenceStore.framework */; };
+		BEB0AB00230458EC001BEE80 /* PersistenceStore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEB0AAFE230458EC001BEE80 /* PersistenceStore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEB0AB0223046F2C001BEE80 /* GithubIssuesViewModel+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0AB0123046F2C001BEE80 /* GithubIssuesViewModel+Request.swift */; };
+		BEB0AB0423049E48001BEE80 /* GithubIssuesCommentViewModel+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0AB0323049E48001BEE80 /* GithubIssuesCommentViewModel+Request.swift */; };
+		BEB0AB092304A7CC001BEE80 /* UserDefaultsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0AB082304A7CC001BEE80 /* UserDefaultsUtil.swift */; };
+		BEB0AB0B2304AA27001BEE80 /* NSManagedObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0AB0A2304AA27001BEE80 /* NSManagedObjectExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE0A066F23030F8D00126107 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE0A066E23030F8D00126107 /* GameSDKCore.framework in Embed Frameworks */,
+				BEB0AB00230458EC001BEE80 /* PersistenceStore.framework in Embed Frameworks */,
+				BE0A066C23030F8D00126107 /* GameChangesSDKGithubAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE0A06252302097B00126107 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BE0A06272302099000126107 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BE0A0629230209D200126107 /* GithubIssuesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesCoordinator.swift; sourceTree = "<group>"; };
+		BE0A062B23020A6100126107 /* GithubIssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesViewController.swift; sourceTree = "<group>"; };
+		BE0A062C23020A6100126107 /* GithubIssuesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubIssuesViewController.xib; sourceTree = "<group>"; };
+		BE0A062F23020A8A00126107 /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
+		BE0A063123020AD900126107 /* GithubIssuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesViewModel.swift; sourceTree = "<group>"; };
+		BE0A06332302105E00126107 /* GithubIssuesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesProtocols.swift; sourceTree = "<group>"; };
+		BE0A06352302122100126107 /* GithubIssuesViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubIssuesViewController+TableView.swift"; sourceTree = "<group>"; };
+		BE0A06382302132400126107 /* GithubIssueItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssueItemViewModel.swift; sourceTree = "<group>"; };
+		BE0A06422302A75400126107 /* GithubIssuesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesTableViewCell.swift; sourceTree = "<group>"; };
+		BE0A06432302A75400126107 /* GithubIssuesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubIssuesTableViewCell.xib; sourceTree = "<group>"; };
+		BE0A06462302A77000126107 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		BE0A06482302A88400126107 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
+		BE0A064B2302AC2500126107 /* GameChangesSDKGithubAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameChangesSDKGithubAPI.framework; sourceTree = "<group>"; };
+		BE0A064C2302AC2500126107 /* GameSDKCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameSDKCore.framework; sourceTree = "<group>"; };
+		BE0A06552302AECE00126107 /* GithubIssuesCommentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesCommentCoordinator.swift; sourceTree = "<group>"; };
+		BE0A06572302AEE700126107 /* GithubIssuesCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesCommentViewController.swift; sourceTree = "<group>"; };
+		BE0A06582302AEE700126107 /* GithubIssuesCommentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubIssuesCommentViewController.xib; sourceTree = "<group>"; };
+		BE0A065B2302AF6C00126107 /* GithubIssuesCommentViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubIssuesCommentViewController+TableView.swift"; sourceTree = "<group>"; };
+		BE0A065D2302AF9900126107 /* GithubIssuesCommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesCommentViewModel.swift; sourceTree = "<group>"; };
+		BE0A06602302B01400126107 /* GithubIssueCommentItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssueCommentItemViewModel.swift; sourceTree = "<group>"; };
+		BE0A06622302B04600126107 /* GithubIssuesCommentProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssuesCommentProtocols.swift; sourceTree = "<group>"; };
+		BE0A066523030D1200126107 /* GithubIssueCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubIssueCommentTableViewCell.swift; sourceTree = "<group>"; };
+		BE0A066623030D1200126107 /* GithubIssueCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubIssueCommentTableViewCell.xib; sourceTree = "<group>"; };
+		BE613BCC23016D1D009E9386 /* GameChangesAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameChangesAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE613BCF23016D1D009E9386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE613BD123016D1D009E9386 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE613BD623016D1E009E9386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE613BD923016D1E009E9386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE613BDB23016D1E009E9386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB0AAFE230458EC001BEE80 /* PersistenceStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersistenceStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEB0AB0123046F2C001BEE80 /* GithubIssuesViewModel+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubIssuesViewModel+Request.swift"; sourceTree = "<group>"; };
+		BEB0AB0323049E48001BEE80 /* GithubIssuesCommentViewModel+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubIssuesCommentViewModel+Request.swift"; sourceTree = "<group>"; };
+		BEB0AB082304A7CC001BEE80 /* UserDefaultsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtil.swift; sourceTree = "<group>"; };
+		BEB0AB0A2304AA27001BEE80 /* NSManagedObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE613BC923016D1D009E9386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0A066B23030F8D00126107 /* GameChangesSDKGithubAPI.framework in Frameworks */,
+				BEB0AAFF230458EC001BEE80 /* PersistenceStore.framework in Frameworks */,
+				BE0A064E2302AC2500126107 /* GameSDKCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE0A061C2302096500126107 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06402302148A00126107 /* Views */,
+				BE0A061D2302096500126107 /* Coordinators */,
+				BE0A061E2302096500126107 /* ViewModels */,
+				BE0A061F2302096500126107 /* Models */,
+				BE0A06202302096500126107 /* Protocols */,
+				BE0A062B23020A6100126107 /* GithubIssuesViewController.swift */,
+				BE0A062C23020A6100126107 /* GithubIssuesViewController.xib */,
+				BE0A06352302122100126107 /* GithubIssuesViewController+TableView.swift */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
+		BE0A061D2302096500126107 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A0629230209D200126107 /* GithubIssuesCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		BE0A061E2302096500126107 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A0637230212D400126107 /* Items */,
+				BE0A063123020AD900126107 /* GithubIssuesViewModel.swift */,
+				BEB0AB0123046F2C001BEE80 /* GithubIssuesViewModel+Request.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BE0A061F2302096500126107 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE0A06202302096500126107 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06332302105E00126107 /* GithubIssuesProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE0A06212302096500126107 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BEB0AB072304A7B7001BEE80 /* Utils */,
+				BE0A06222302096500126107 /* Coordinators */,
+				BE0A06232302096500126107 /* Extensions */,
+				BE0A06242302096500126107 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BE0A06222302096500126107 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06252302097B00126107 /* AppCoordinator.swift */,
+				BE0A06272302099000126107 /* Coordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		BE0A06232302096500126107 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06462302A77000126107 /* UITableViewExtensions.swift */,
+				BE0A06482302A88400126107 /* NSObjectExtensions.swift */,
+				BEB0AB0A2304AA27001BEE80 /* NSManagedObjectExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE0A06242302096500126107 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A062F23020A8A00126107 /* ViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE0A0637230212D400126107 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06382302132400126107 /* GithubIssueItemViewModel.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		BE0A06402302148A00126107 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06412302148A00126107 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE0A06412302148A00126107 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06422302A75400126107 /* GithubIssuesTableViewCell.swift */,
+				BE0A06432302A75400126107 /* GithubIssuesTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BE0A064A2302AC2500126107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A064B2302AC2500126107 /* GameChangesSDKGithubAPI.framework */,
+				BE0A064C2302AC2500126107 /* GameSDKCore.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE0A064F2302AE9100126107 /* GithubComment */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06542302AEBA00126107 /* Coordinators */,
+				BE0A06532302AEBA00126107 /* Models */,
+				BE0A06502302AEBA00126107 /* Protocols */,
+				BE0A06512302AEBA00126107 /* ViewModels */,
+				BE0A06522302AEBA00126107 /* Views */,
+				BE0A06572302AEE700126107 /* GithubIssuesCommentViewController.swift */,
+				BE0A06582302AEE700126107 /* GithubIssuesCommentViewController.xib */,
+				BE0A065B2302AF6C00126107 /* GithubIssuesCommentViewController+TableView.swift */,
+			);
+			path = GithubComment;
+			sourceTree = "<group>";
+		};
+		BE0A06502302AEBA00126107 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06622302B04600126107 /* GithubIssuesCommentProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE0A06512302AEBA00126107 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A065F2302B00700126107 /* Items */,
+				BE0A065D2302AF9900126107 /* GithubIssuesCommentViewModel.swift */,
+				BEB0AB0323049E48001BEE80 /* GithubIssuesCommentViewModel+Request.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BE0A06522302AEBA00126107 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A066423030CF500126107 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE0A06532302AEBA00126107 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE0A06542302AEBA00126107 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06552302AECE00126107 /* GithubIssuesCommentCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		BE0A065F2302B00700126107 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A06602302B01400126107 /* GithubIssueCommentItemViewModel.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		BE0A066423030CF500126107 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A066523030D1200126107 /* GithubIssueCommentTableViewCell.swift */,
+				BE0A066623030D1200126107 /* GithubIssueCommentTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BE613BC323016D1D009E9386 = {
+			isa = PBXGroup;
+			children = (
+				BEB0AAFE230458EC001BEE80 /* PersistenceStore.framework */,
+				BE613BCE23016D1D009E9386 /* GameChangesAssignment */,
+				BE613BCD23016D1D009E9386 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE613BCD23016D1D009E9386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE613BCC23016D1D009E9386 /* GameChangesAssignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE613BCE23016D1D009E9386 /* GameChangesAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A064A2302AC2500126107 /* Frameworks */,
+				BE0A06212302096500126107 /* Common */,
+				BE0A061C2302096500126107 /* Github */,
+				BE0A064F2302AE9100126107 /* GithubComment */,
+				BE613BCF23016D1D009E9386 /* AppDelegate.swift */,
+				BE613BD123016D1D009E9386 /* ViewController.swift */,
+				BE613BD623016D1E009E9386 /* Assets.xcassets */,
+				BE613BD823016D1E009E9386 /* LaunchScreen.storyboard */,
+				BE613BDB23016D1E009E9386 /* Info.plist */,
+			);
+			path = GameChangesAssignment;
+			sourceTree = "<group>";
+		};
+		BEB0AB072304A7B7001BEE80 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BEB0AB082304A7CC001BEE80 /* UserDefaultsUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE613BCB23016D1D009E9386 /* GameChangesAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE613BDE23016D1E009E9386 /* Build configuration list for PBXNativeTarget "GameChangesAssignment" */;
+			buildPhases = (
+				BE613BC823016D1D009E9386 /* Sources */,
+				BE613BC923016D1D009E9386 /* Frameworks */,
+				BE613BCA23016D1D009E9386 /* Resources */,
+				BE0A066F23030F8D00126107 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameChangesAssignment;
+			productName = GameChangesAssignment;
+			productReference = BE613BCC23016D1D009E9386 /* GameChangesAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE613BC423016D1D009E9386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Abhayam;
+				TargetAttributes = {
+					BE613BCB23016D1D009E9386 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BE613BC723016D1D009E9386 /* Build configuration list for PBXProject "GameChangesAssignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE613BC323016D1D009E9386;
+			productRefGroup = BE613BCD23016D1D009E9386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE613BCB23016D1D009E9386 /* GameChangesAssignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE613BCA23016D1D009E9386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0A065A2302AEE700126107 /* GithubIssuesCommentViewController.xib in Resources */,
+				BE0A06452302A75400126107 /* GithubIssuesTableViewCell.xib in Resources */,
+				BE0A066823030D1200126107 /* GithubIssueCommentTableViewCell.xib in Resources */,
+				BE613BDA23016D1E009E9386 /* LaunchScreen.storyboard in Resources */,
+				BE0A062E23020A6100126107 /* GithubIssuesViewController.xib in Resources */,
+				BE613BD723016D1E009E9386 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE613BC823016D1D009E9386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0A06282302099000126107 /* Coordinator.swift in Sources */,
+				BE0A06562302AECE00126107 /* GithubIssuesCommentCoordinator.swift in Sources */,
+				BEB0AB0423049E48001BEE80 /* GithubIssuesCommentViewModel+Request.swift in Sources */,
+				BE0A065E2302AF9900126107 /* GithubIssuesCommentViewModel.swift in Sources */,
+				BE0A06492302A88500126107 /* NSObjectExtensions.swift in Sources */,
+				BEB0AB0B2304AA27001BEE80 /* NSManagedObjectExtension.swift in Sources */,
+				BE0A06342302105E00126107 /* GithubIssuesProtocols.swift in Sources */,
+				BE0A063223020AD900126107 /* GithubIssuesViewModel.swift in Sources */,
+				BE0A06362302122100126107 /* GithubIssuesViewController+TableView.swift in Sources */,
+				BE0A066723030D1200126107 /* GithubIssueCommentTableViewCell.swift in Sources */,
+				BE0A06592302AEE700126107 /* GithubIssuesCommentViewController.swift in Sources */,
+				BE0A06472302A77000126107 /* UITableViewExtensions.swift in Sources */,
+				BE0A065C2302AF6C00126107 /* GithubIssuesCommentViewController+TableView.swift in Sources */,
+				BE0A06392302132400126107 /* GithubIssueItemViewModel.swift in Sources */,
+				BE0A06262302097B00126107 /* AppCoordinator.swift in Sources */,
+				BE0A06442302A75400126107 /* GithubIssuesTableViewCell.swift in Sources */,
+				BE0A062A230209D200126107 /* GithubIssuesCoordinator.swift in Sources */,
+				BE613BD223016D1D009E9386 /* ViewController.swift in Sources */,
+				BE0A06612302B01400126107 /* GithubIssueCommentItemViewModel.swift in Sources */,
+				BE0A062D23020A6100126107 /* GithubIssuesViewController.swift in Sources */,
+				BE613BD023016D1D009E9386 /* AppDelegate.swift in Sources */,
+				BEB0AB0223046F2C001BEE80 /* GithubIssuesViewModel+Request.swift in Sources */,
+				BE0A06632302B04600126107 /* GithubIssuesCommentProtocols.swift in Sources */,
+				BEB0AB092304A7CC001BEE80 /* UserDefaultsUtil.swift in Sources */,
+				BE0A063023020A8A00126107 /* ViewProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE613BD823016D1E009E9386 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE613BD923016D1E009E9386 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE613BDC23016D1E009E9386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE613BDD23016D1E009E9386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE613BDF23016D1E009E9386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GameChangesAssignment/Frameworks",
+				);
+				INFOPLIST_FILE = GameChangesAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Abhayam.GameChangesAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BE613BE023016D1E009E9386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GameChangesAssignment/Frameworks",
+				);
+				INFOPLIST_FILE = GameChangesAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Abhayam.GameChangesAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE613BC723016D1D009E9386 /* Build configuration list for PBXProject "GameChangesAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE613BDC23016D1E009E9386 /* Debug */,
+				BE613BDD23016D1E009E9386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE613BDE23016D1E009E9386 /* Build configuration list for PBXNativeTarget "GameChangesAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE613BDF23016D1E009E9386 /* Debug */,
+				BE613BE023016D1E009E9386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE613BC423016D1D009E9386 /* Project object */;
+}
